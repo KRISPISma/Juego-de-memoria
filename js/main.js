@@ -128,7 +128,7 @@ var eliminados = 0;
 var start = document.getElementById("start");
 var reloj = document.getElementById("reloj");
 var gameover = document.getElementById("game-over");
-var segundos = 20;  // 60 es "dificil"; 90 "fácil"  (está en tres sitios: aqui, en gameOver y en contEliminados)
+var segundos = 90;  // 60 es "dificil"; 90 "fácil"  (está en tres sitios: aqui, en gameOver y en contEliminados)
 
 //***** FUNCIÓN PARA BARAJAR LOS DIV CON CADA PERSONAJE
 
@@ -200,7 +200,7 @@ function startGame() {
 
 function gameOver() {
     // console.log("ejecuto gameOver")
-    segundos = 20;  // LO MISMO QUE ARRIBA
+    segundos = 90;  // LO MISMO QUE ARRIBA
     song.pause();
     song.currentTime = 0;
     fail.play();   // audio
@@ -290,7 +290,7 @@ var contEliminados = function () {
         winner.classList.add("open");
         win.currentTime = 0;  // audio
         win.play();          // audio    
-        segundos = 20;  // LO MISMO QUE ARRIBA (aunque se podría poner menos ;))
+        segundos = 90;  // LO MISMO QUE ARRIBA (aunque se podría poner menos ;))
         song.pause();
         song.currentTime = 0;
         rejilla.classList.add("out");
